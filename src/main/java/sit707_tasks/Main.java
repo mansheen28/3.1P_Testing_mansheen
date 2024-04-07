@@ -48,6 +48,65 @@ public class Main
         date = new DateUtil(1, 1, 2024);
         System.out.println(date);
         date.decrement();
-        System.out.println(date);        
+        System.out.println(date);  
+        
+        // Testing table scenarios from the task sheet
+        
+        date = new DateUtil(1, 6, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(2, 6, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 6, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(30, 6, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        // Doing a try/catch here since it will be an invalid input
+        try {
+            date = new DateUtil(31, 6, 1994);
+            date.increment();
+            System.out.println(date);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        date = new DateUtil(15, 1, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 2, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 11, 1994);
+        date.increment();
+        System.out.println(date);
+
+        date = new DateUtil(15, 12, 1994);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 6, 1700);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 6, 1701);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 6, 2023);
+        date.increment();
+        System.out.println(date);
+        
+        date = new DateUtil(15, 6, 2024);
+        date.increment();
+        System.out.println(date);  
     }
 }
